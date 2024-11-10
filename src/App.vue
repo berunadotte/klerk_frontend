@@ -3,6 +3,7 @@
     <header class="text-center mt-[48px]">
       <img src="./assets/images/logo.svg" alt="Logo" class="mx-auto" />
       <nav
+        aria-label="Навигация по сайту"
         class="text-gray-500 text-[13px] space-x-2.5 pt-[22px] max-sm:mt-[4px] max-sm:space-x-2"
       >
         <span v-if="!isSmallScreen">Хлебные крошки</span>
@@ -18,7 +19,7 @@
       </h1>
     </header>
 
-    <div class="mt-[18px] max-sm:mt-[20px]">
+    <main class="mt-[18px] max-sm:mt-[20px]">
       <ul
         class="flex space-x-6 text-[16px] tracking-tighter font-medium text-blue-500 max-sm:space-x-8 max-sm:ml-[9px]"
       >
@@ -38,7 +39,7 @@
           >
         </li>
       </ul>
-    </div>
+    </main>
 
     <section
       class="bg-bg-gray rounded-lg shadow-lg w-full max-w-[1024px] max-sm:max-w-full"
@@ -64,7 +65,7 @@
           <img
             v-if="isSmallScreen"
             src="./assets/images/arrow.svg"
-            alt="Arrow"
+            alt="Подписаться"
             class="w-[24px] h-[24px]"
           />
           <p v-else>Подписаться</p>
@@ -76,7 +77,27 @@
         >
           <input type="checkbox" value="" class="sr-only peer" />
           <div
-            class="relative w-[32px] h-[16px] bg-gray-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:start-[1px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[14px] after:w-[14px] after:transition-all peer-checked:bg-blue-600"
+            class="relative w-[32px] h-[16px] bg-gray-300 
+            peer-focus:outline-none 
+            peer-focus:ring-4 
+            peer-focus:ring-blue-300 
+            rounded-full 
+            peer 
+            peer-checked:after:translate-x-full 
+            rtl:peer-checked:after:-translate-x-full 
+            peer-checked:after:border-white 
+            after:content-[''] 
+            after:absolute 
+            after:top-[1px] 
+            after:start-[1px] 
+            after:bg-white 
+            after:border-gray-300 
+            after:border 
+            after:rounded-full 
+            after:h-[14px] 
+            after:w-[14px] 
+            after:transition-all 
+            peer-checked:bg-blue-600"
           ></div>
           <span class="ml-[8px] text-sm font-{400} text-gray-900"
             >Подписаться на все рассылки</span
@@ -149,7 +170,7 @@ export default {
   },
   methods: {
     checkScreenSize() {
-      this.isSmallScreen = window.innerWidth <= 640 // Tailwind's sm breakpoint is 640px
+      this.isSmallScreen = window.innerWidth <= 640
     },
   },
 }

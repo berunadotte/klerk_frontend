@@ -1,5 +1,5 @@
 <template>
-  <div
+  <article
     class="flex items-start border rounded-2xl shadow-md bg-gray-50 w-[478px] max-h-[244px] pt-[22px] pl-[24px] max-sm:w-[343px] max-sm:pt-[22px] max-sm:pl-[16px] max-sm:max-h-[272px]"
   >
     <div class="relative">
@@ -51,7 +51,7 @@
         </label>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -71,6 +71,6 @@ export default {
     },
   },
 }
-</script>
 
+</script>
 <style scoped></style>
