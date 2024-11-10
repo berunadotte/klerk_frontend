@@ -9,7 +9,7 @@
       </h3>
       <img
         :src="icon"
-        alt=""
+        alt="Иконка карточки"
         class="absolute top-[-1px] right-[-124px] w-[80px] h-[80px] mr-[16px] ml-[28px] mt-[2px] max-sm:w-[40px] max-sm:h-[40px] max-sm:pt-[0px] max-sm:top-[0px] max-sm:right-[-1px]"
       />
       <p
